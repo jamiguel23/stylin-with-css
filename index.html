@@ -4,6 +4,8 @@
 
 <head>
   <title> Stylin with CSS</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
   <style>
     html {
       background-color: #ccc
@@ -43,6 +45,37 @@
     nav a:hover {
       text-decoration: none;
     }
+
+    table.my-table {
+      border-collapse: collapse;
+    }
+
+    table.my-table th {
+      background-color: goldenrod;
+      color: #102E37;
+      font-weight: bold;
+      font-size: 13px;
+      border: 1px solid black
+;
+    }
+
+    table.my-table td {
+      padding: 15px;
+    }
+
+    table.my-table td {
+      color: #102E37;
+      border: 1px solid #102E37;
+    }
+
+    table.my-table tr {
+      background-color: #2BBBD8;
+    }
+
+    table.my-table tr:nth-child(odd) {
+      background-color: #E8EDE0;
+    }
+
 
     footer.page-footer {
 
@@ -126,7 +159,7 @@
   </p>
 
 
-  <table style="border: 1px solid black">
+  <table class="my-table">
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
